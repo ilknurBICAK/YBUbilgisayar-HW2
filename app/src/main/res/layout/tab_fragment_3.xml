@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/arkaplan">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/haberler"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="364dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/haber"
+            />
+    </LinearLayout>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/linearLayout"
+        android:id="@+id/border5"
+        android:layout_marginBottom="20dp"/>
+
+    <ListView
+
+        android:layout_below="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView2"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:text="ÇIKIŞ"
+        android:background="#060477"
+        android:textColor="#FFFFFF"
+
+        android:layout_below="@+id/border6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/listView2"
+        android:id="@+id/border6"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>
